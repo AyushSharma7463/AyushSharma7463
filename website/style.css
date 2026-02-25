@@ -1,0 +1,36 @@
+/* Hide the actual checkbox from view */
+.toggle-input {
+    display: none;
+}
+
+/* Initially hide the collapsible content by setting max-height to 0 and hiding overflow */
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out; /* Smooth transition for opening/closing */
+}
+
+/* Target the content when the checkbox is checked */
+.toggle-input:checked ~ .content .collapsible-content {
+    max-height: 500px; /* A value larger than your content height */
+    transition: max-height 0.5s ease-in; /* Smooth transition when expanding */
+}
+
+/* Style the label (the "button") */
+.toggle-label {
+    display: inline-block;
+    color: blue; /* Or your preferred link color */
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+/* Change the label text based on the checked state */
+/* Use CSS content property to change the text of the label */
+.toggle-label::before {
+    content: "Show more";
+}
+
+.toggle-input:checked ~ .content ~ .toggle-label::before {
+    content: "Show less";
+}

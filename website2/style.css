@@ -1,0 +1,296 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     backdrop-filter: blur(5px);
+    padding: 0px 50px 0px 50px;
+    height: 80px;
+    position: fixed;
+    width: 1630px;
+    
+
+
+}
+/* https://coolors.co/palette/03045e-0077b6-00b4d8-90e0ef-caf0f8. color palatte*/
+head_d1{
+   margin: 0%;
+   padding: 0%;
+   line-height: 0%;
+   font-weight: bolder;
+}
+#pra{
+    margin-top: -15px;
+}
+#head_d2{
+    nav{
+
+    height: 100%;
+    width: 580px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      
+    }
+}
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: #CAF0F8;
+    color: #03045E;
+
+}
+#nav_bar {
+    color: #03045E;
+    font-weight: bold;
+    font-size: 18px;
+    a{
+        text-decoration: none;
+        color: #03045E;
+    }
+
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    #into{
+        h1{
+        font-size: 50px;
+    
+       }
+       margin-right: 20px;
+
+    }
+    
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 880px;
+    width:  100%;
+    padding: 0%;
+    margin: 0%;
+
+}
+#main_div{
+    
+    height: 300px;
+    width:  450px;
+    padding: 0%;
+    margin: 0%;
+    background-color: #03045E;
+    color: #CAF0F8;
+    border-radius: 20px;
+  
+
+   
+}
+#into{
+    .ss{
+        text-decoration: none;
+        color: #03045E;
+        font-size: 30px;
+        padding: 10px;
+        
+       
+
+    }
+}
+#a1, #a2{
+            background-color: #03045E;
+            border-radius: 10px;
+            padding: 10px;
+            color: #CAF0F8;
+            text-decoration: none;
+            
+            
+        }
+
+#box_div{
+    display: flex;
+    height: 20px;
+    width: 400px;
+    justify-content: space-between;
+   padding: 20px;
+   p{
+    font-size: 16px;
+    font-weight: bold;
+    width: 60px;
+    color: #90E0EF;
+    margin-top: -5px;
+    
+   }
+    
+}
+#color1{
+        background-color: red;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+    }
+#color2{
+        background-color: yellow;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+    }
+#color3{
+        background-color: green;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+    }
+#box_div2{
+    display: flex;
+    height: 12px;
+    width: 52px;
+    justify-content: space-between;
+}
+#box_para{
+    color: #90E0EF;
+   margin: 0%;
+   height: 140px;
+    width: 360px;
+   ul{
+    margin-top: -20px;
+    font-size: 16px;
+ 
+
+   }
+   scrollbar-hidden{
+
+   }
+   
+
+   
+}
+#anchor{
+    display: flex;
+    justify-content:space-around;
+    width: 400px;
+    
+}
+#about{
+    display: flex;
+    justify-content: center;
+    h2{
+        font-size: 40px;
+        padding: 0%;
+        margin: 0%;
+
+    }
+    p{
+        font-size: 20px;
+        padding: 0%;
+        margin: 10px;
+        width: 800px;
+    }
+}
+
+#about_box{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    h3{
+        font-size: 25px;
+        padding: 0%;
+        margin: 10px;
+    }
+}
+#EduExp{
+    display: flex;
+    justify-content: center;
+}
+#Education, #Experience{
+    border: 2px solid #03045E;
+    border-radius: 15px;
+    height: 300px;
+    width: 400px;
+    margin: 20px;
+    padding: 10px;
+    text-align: start;
+    p{
+        width: 350px;
+    }
+}
+#Profile{
+    text-align: center;
+    height: 544px;
+    width: 400px;
+    justify-content: center;
+    padding-top: 10px;
+    p{
+        font-size: 18px;
+        margin-left: -190px;
+        }
+   
+
+}
+.Proflie_pic{
+    background-color: #03045E;
+  width: 300px;
+  height: 200px;
+  object-fit: cover; 
+  border: 2px solid #03045E;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+#Profile_box{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    padding-left: 165px;
+}
+#Download1{
+    background-color: #03045E;
+    border-radius: 10px;
+    padding: 10px;
+    color: #CAF0F8;
+    text-decoration: none;
+   
+
+
+}
+#project_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.toggle-input {
+  display: none;
+}
+
+/* extra content hidden */
+.project_item_more {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+/* expand on check */
+.toggle-input:checked ~ .project_item_more {
+  max-height: 500px;
+}
+
+/* label styling */
+.toggle-label {
+  display: inline-block;
+  color: blue;
+  cursor: pointer;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+/* label text */
+.toggle-label::before {
+  content: "Show more";
+}
+
+.toggle-input:checked ~ .toggle-label::before {
+  content: "Show less";
+}

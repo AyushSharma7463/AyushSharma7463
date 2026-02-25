@@ -1,239 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ayush Sharma | Portfolio</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body {
-      background: #0f172a;
-      color: #e5e7eb;
-      line-height: 1.6;
-    }
-
-    header {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background: linear-gradient(135deg, #020617, #0f172a);
-      padding: 20px;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    header span {
-      color: #38bdf8;
-    }
-
-    header p {
-      max-width: 700px;
-      font-size: 1.1rem;
-      margin-bottom: 20px;
-      color: #cbd5f5;
-    }
-
-    nav {
-      margin-top: 20px;
-    }
-
-    nav a {
-      margin: 0 10px;
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 80px 10%;
-    }
-
-    section h2 {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-      border-left: 5px solid #38bdf8;
-      padding-left: 15px;
-    }
-
-    .about p {
-      max-width: 900px;
-      font-size: 1.05rem;
-      color: #d1d5db;
-    }
-
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .skill-box {
-      background: #020617;
-      padding: 20px;
-      border-radius: 8px;
-      border: 1px solid #1e293b;
-    }
-
-    .skill-box h3 {
-      margin-bottom: 10px;
-      color: #38bdf8;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-      margin-top: 30px;
-    }
-
-    .project-card {
-      background: #020617;
-      padding: 20px;
-      border-radius: 8px;
-      border: 1px solid #1e293b;
-    }
-
-    .project-card h3 {
-      margin-bottom: 10px;
-      color: #38bdf8;
-    }
-
-    .project-card p {
-      font-size: 0.95rem;
-      color: #cbd5f5;
-    }
-
-    .contact p {
-      font-size: 1.05rem;
-      margin-bottom: 10px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #020617;
-      color: #94a3b8;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.3rem;
-      }
-      section {
-        padding: 60px 5%;
-      }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-  <!-- HERO -->
-  <header>
-    <h1>Hi, I'm <span>Ayush Sharma</span></h1>
-    <p>
-      Computer Science student, developer, and problem-solver focused on building
-      practical software, clean systems, and scalable ideas — not toy projects.
-    </p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <!-- ABOUT -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      I am Ayush Sharma, a Computer Science student with hands-on experience in
-      programming, system design, and applied problem solving. I focus on learning
-      technologies deeply instead of blindly chasing trends. My interests include
-      backend development, data structures, and building systems that actually work
-      in the real world.
-    </p>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="skill-box">
-        <h3>Programming</h3>
-        <p>Java, Python, C, JavaScript</p>
-      </div>
-      <div class="skill-box">
-        <h3>Web Development</h3>
-        <p>HTML, CSS, JavaScript, React (Basics)</p>
-      </div>
-      <div class="skill-box">
-        <h3>Backend</h3>
-        <p>Flask, Spring Boot (Learning)</p>
-      </div>
-      <div class="skill-box">
-        <h3>Core CS</h3>
-        <p>DSA, OOP, DBMS, OS, Computer Networks</p>
-      </div>
+  <div class="show-more-container">
+    <!-- 1. The invisible checkbox -->
+    <input type="checkbox" id="toggle" class="toggle-input">
+    
+    <!-- 2. The main content wrap -->
+    <div class="content">
+        <p>
+            This is the initial, visible part of the content. It provides a brief introduction 
+            to the topic. Users will see this by default before interacting with the control.
+        </p>
+        
+        <!-- 3. The collapsible content wrap -->
+        <div class="collapsible-content">
+            <p>
+                This content is hidden by default. It contains all the extra details, 
+                additional paragraphs, or images that the user only sees when they 
+                click the "Show more" button. This part is managed purely by CSS.
+            </p>
+        </div>
     </div>
-  </section>
+    
+    <!-- 4. The label acts as the clickable button -->
+    <label for="toggle" class="toggle-label"></label>
+</div>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="project-card">
-        <h3>Train Ticket Booking System</h3>
-        <p>
-          A Flask-based system that supports ticket booking, seat allocation,
-          PNR generation, and downloadable PDF tickets.
-        </p>
-      </div>
-
-      <div class="project-card">
-        <h3>Line Following Robot</h3>
-        <p>
-          Embedded system project using sensors and control logic to autonomously
-          follow a predefined path.
-        </p>
-      </div>
-
-      <div class="project-card">
-        <h3>VR System using Raspberry Pi</h3>
-        <p>
-          University-level project exploring low-cost VR setup and hardware-software
-          integration.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
-    <p>GitHub: https://github.com/your-username</p>
-    <p>LinkedIn: https://linkedin.com/in/your-profile</p>
-  </section>
-
-  <footer>
-    © 2026 Ayush Sharma. Built with plain HTML & CSS — no unnecessary frameworks.
-  </footer>
-
+  
 </body>
 </html>
