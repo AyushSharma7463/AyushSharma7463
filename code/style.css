@@ -63,8 +63,9 @@ header{
 .aboutcontent{
   
   
-     p{
-        width: 1000px;
+     p{ 
+       
+        width: 80%;
       margin-bottom: 15px;
       text-align: start;
      }
